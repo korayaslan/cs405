@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Chart</title>
+</head>
+<body>
+
+        <svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background -->
+                <rect width="100%" height="100%" fill="white"/>
+                <!-- Title for the graph -->
+                <text x="200" y="40" font-family="Arial" font-size="24" fill="black">Number of suicides and crude suicide rate, 2001-2022</text>
+
+            
+                <!-- Bars for Number of Suicides -->
+                <!-- Using a scale of 1px per 10 suicides for height and 50px for each year -->
+                <!-- This gives us: height in px = suicides / 10 -->
+                <!-- And y-position: 540 - height -->
+                <rect x="50" y="281.6" width="40" height="258.4" fill="#3498db"/>
+                <rect x="100" y="309.9" width="40" height="230.1" fill="#3498db"/>
+                <rect x="150" y="269.5" width="40" height="270.5" fill="#3498db"/>
+                <rect x="200" y="269.3" width="40" height="270.7" fill="#3498db"/>
+                <rect x="250" y="269.7" width="40" height="270.3" fill="#3498db"/>
+                <rect x="300" y="257.1" width="40" height="282.9" fill="#3498db"/>
+                <rect x="350" y="260.7" width="40" height="279.3" fill="#3498db"/>
+                <rect x="400" y="258.4" width="40" height="281.6" fill="#3498db"/>
+                <rect x="450" y="250.2" width="40" height="289.8" fill="#3498db"/>
+                <rect x="500" y="246.7" width="40" height="293.3" fill="#3498db"/>
+                <rect x="550" y="272.3" width="40" height="267.7" fill="#3498db"/>
+                <rect x="600" y="211.3" width="40" height="328.7" fill="#3498db"/>
+                <rect x="650" y="214.8" width="40" height="325.2" fill="#3498db"/>
+                <rect x="700" y="223.1" width="40" height="316.9" fill="#3498db"/>
+                <rect x="750" y="215.4" width="40" height="324.6" fill="#3498db"/>
+                <rect x="800" y="220.7" width="40" height="319.3" fill="#3498db"/>
+                <rect x="850" y="223.2" width="40" height="316.8" fill="#3498db"/>
+                <rect x="900" y="205.8" width="40" height="334.2" fill="#3498db"/>
+                <rect x="950" y="192.4" width="40" height="347.6" fill="#3498db"/>
+                <rect x="1000" y="169" width="40" height="371.0" fill="#3498db"/>
+                <rect x="1050" y="120.6" width="40" height="419.4" fill="#3498db"/>
+                <rect x="1100" y="125.4" width="40" height="414.6" fill="#3498db"/>
+            
+                <!-- The rest of the SVG code remains unchanged from the previous version... -->
+            
+            
+                <!-- Line for Crude Suicide Rate -->
+<!-- Using a scale of 100px for a rate of 5 -->
+<!-- This gives us: y-position in px = 540 - (rate * 20) -->
+<polyline points="70,182.7 120,225.9 170,175.5 220,180 270,184.5 320,172.8 370,181.8 420,183.6 470,178.2 520,179.1 570,215.1 620,146.7 670,155.7 720,170.1 770,166.5 820,177.3 870,185.4 920,170.1 970,161.1 1020,139.5 1070,91.8 1120,100.8" fill="none" stroke="red" stroke-width="2"/>
+            
+                <!-- Axes -->
+                <line x1="40" y1="20" x2="40" y2="580" stroke="black"/>
+                <line x1="40" y1="540" x2="1150" y2="540" stroke="black"/>
+            
+                <!-- Labels for years -->
+                <text x="70" y="555" font-family="Arial" font-size="12" fill="black">2001</text>
+                <text x="120" y="555" font-family="Arial" font-size="12" fill="black">2002</text>
+                <text x="170" y="555" font-family="Arial" font-size="12" fill="black">2003</text>
+                <text x="220" y="555" font-family="Arial" font-size="12" fill="black">2004</text>
+                <text x="270" y="555" font-family="Arial" font-size="12" fill="black">2005</text>
+                <text x="320" y="555" font-family="Arial" font-size="12" fill="black">2006</text>
+                <text x="370" y="555" font-family="Arial" font-size="12" fill="black">2007</text>
+                <text x="420" y="555" font-family="Arial" font-size="12" fill="black">2008</text>
+                <text x="470" y="555" font-family="Arial" font-size="12" fill="black">2009</text>
+                <text x="520" y="555" font-family="Arial" font-size="12" fill="black">2010</text>
+                <text x="570" y="555" font-family="Arial" font-size="12" fill="black">2011</text>
+                <text x="620" y="555" font-family="Arial" font-size="12" fill="black">2012</text>
+                <text x="670" y="555" font-family="Arial" font-size="12" fill="black">2013</text>
+                <text x="720" y="555" font-family="Arial" font-size="12" fill="black">2014</text>
+                <text x="770" y="555" font-family="Arial" font-size="12" fill="black">2015</text>
+                <text x="820" y="555" font-family="Arial" font-size="12" fill="black">2016</text>
+                <text x="870" y="555" font-family="Arial" font-size="12" fill="black">2017</text>
+                <text x="920" y="555" font-family="Arial" font-size="12" fill="black">2018</text>
+                <text x="970" y="555" font-family="Arial" font-size="12" fill="black">2019</text>
+                <text x="1020" y="555" font-family="Arial" font-size="12" fill="black">2020</text>
+                <text x="1070" y="555" font-family="Arial" font-size="12" fill="black">2021</text>
+                <text x="1120" y="555" font-family="Arial" font-size="12" fill="black">2022</text>
+            
+                <!-- Label for axes -->
+                <text x="10" y="315" font-family="Arial" font-size="12" fill="black" transform="rotate(-90 10,315)">Number of Suicides</text>
+                <text x="1155" y="560" font-family="Arial" font-size="12" fill="black">Year</text>
+                <!-- ... your existing SVG code ... -->
+
+
+<!-- Ticks and labels for the left Y-axis (Number of Suicides) -->
+<!-- Ticks and labels for the left Y-axis (Number of Suicides) using 1px = 10 suicides -->
+<line x1="35" y1="540" x2="40" y2="540" stroke="black"/>
+<text x="10" y="545" font-family="Arial" font-size="10" fill="black">0</text>
+
+<line x1="35" y1="490" x2="40" y2="490" stroke="black"/>
+<text x="10" y="495" font-family="Arial" font-size="10" fill="black">500</text>
+
+<line x1="35" y1="440" x2="40" y2="440" stroke="black"/>
+<text x="10" y="445" font-family="Arial" font-size="10" fill="black">1000</text>
+
+<line x1="35" y1="390" x2="40" y2="390" stroke="black"/>
+<text x="10" y="395" font-family="Arial" font-size="10" fill="black">1500</text>
+
+<line x1="35" y1="340" x2="40" y2="340" stroke="black"/>
+<text x="10" y="345" font-family="Arial" font-size="10" fill="black">2000</text>
+
+<line x1="35" y1="290" x2="40" y2="290" stroke="black"/>
+<text x="10" y="295" font-family="Arial" font-size="10" fill="black">2500</text>
+
+<line x1="35" y1="240" x2="40" y2="240" stroke="black"/>
+<text x="10" y="245" font-family="Arial" font-size="10" fill="black">3000</text>
+
+<line x1="35" y1="190" x2="40" y2="190" stroke="black"/>
+<text x="10" y="195" font-family="Arial" font-size="10" fill="black">3500</text>
+
+<line x1="35" y1="140" x2="40" y2="140" stroke="black"/>
+<text x="10" y="145" font-family="Arial" font-size="10" fill="black">4000</text>
+
+<line x1="35" y1="90" x2="40" y2="90" stroke="black"/>
+<text x="10" y="95" font-family="Arial" font-size="10" fill="black">4500</text>
+
+
+<!-- Ticks and labels for the right Y-axis (Crude Suicide Rate) -->
+<!-- Label for the right Y-axis (Crude Suicide Rate) -->
+<text x="1155" y="360" font-family="Arial" font-size="12" fill="red" transform="rotate(-90 1155,360)">Crude suicide rate (Per hundred thousand)</text>
+
+<line x1="1160" y1="540" x2="1155" y2="540" stroke="red"/>
+<text x="1165" y="545" font-family="Arial" font-size="10" fill="red">0</text>
+
+<line x1="1160" y1="450" x2="1155" y2="450" stroke="red"/>
+<text x="1165" y="455" font-family="Arial" font-size="10" fill="red">1</text>
+
+<line x1="1160" y1="360" x2="1155" y2="360" stroke="red"/>
+<text x="1165" y="365" font-family="Arial" font-size="10" fill="red">2</text>
+
+<line x1="1160" y1="270" x2="1155" y2="270" stroke="red"/>
+<text x="1165" y="275" font-family="Arial" font-size="10" fill="red">3</text>
+
+<line x1="1160" y1="180" x2="1155" y2="180" stroke="red"/>
+<text x="1165" y="185" font-family="Arial" font-size="10" fill="red">4</text>
+
+<line x1="1160" y1="90" x2="1155" y2="90" stroke="red"/>
+<text x="1165" y="95" font-family="Arial" font-size="10" fill="red">5</text>
+
+
+</svg>
+            
+            
+
+</body>
+</html>
